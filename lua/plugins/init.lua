@@ -72,40 +72,9 @@ return {
   },
 
   {
-    "OXY2DEV/markview.nvim",
-    lazy = false,
-    dependencies = {
-      "saghen/blink.cmp",
-      "nvim-treesitter/nvim-treesitter"
-    },
-    opts = {
-      experimental = {
-        check_rtp_message = false
-      },
-    },
-  },
-
-  {
-    "nvim-treesitter/nvim-treesitter",
-    dependencies = {
-      {
-        "windwp/nvim-ts-autotag",
-        lazy = false,
-        config = true,
-      },
-    },
-    opts = require "configs.treesitter",
-  },
-
-  {
-    "andweeb/presence.nvim",
-    -- enabled = false,
-    lazy = false,
-    opts = {
-      show_time = false,
-      buttons = false,
-      neovim_image_text = "GIGACHAD TEXT EDITOR",
-    },
+    "windwp/nvim-ts-autotag",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    config = true,
   },
 
   {

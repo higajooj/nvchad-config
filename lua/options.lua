@@ -2,8 +2,6 @@ require "nvchad.options"
 
 vim.o.cursorlineopt = "both" -- to enable cursorline!
 
-vim.opt.conceallevel = 0
-
 -- old init below
 vim.opt.colorcolumn = "80"
 vim.opt.rnu = true
